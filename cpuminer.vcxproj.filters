@@ -177,6 +177,9 @@
     <ClCompile Include="algo\bastion.c">
       <Filter>algo</Filter>
     </ClCompile>
+    <ClCompile Include="algo\bitcore.c">
+      <Filter>algo</Filter>
+    </ClCompile>
     <ClCompile Include="algo\blake.c">
       <Filter>algo</Filter>
     </ClCompile>
@@ -208,6 +211,9 @@
       <Filter>algo</Filter>
     </ClCompile>
     <ClCompile Include="algo\keccak.c">
+      <Filter>algo</Filter>
+    </ClCompile>
+    <ClCompile Include="algo\jha.c">
       <Filter>algo</Filter>
     </ClCompile>
     <ClCompile Include="algo\lbry.c">

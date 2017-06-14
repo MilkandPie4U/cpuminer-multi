@@ -2310,7 +2310,7 @@ void print_hash_tests(void)
 
 	printf(CL_WHT "CPU HASH ON EMPTY BUFFER RESULTS:" CL_N "\n\n");
 
-	memset(buf, sizeof(buf), 0);
+	memset(buf, 0, sizeof(buf));
 	//buf[0] = 1; buf[64] = 2; // for endian tests
 
 	axiomhash(&hash[0], &buf[0]);
@@ -2357,6 +2357,9 @@ void print_hash_tests(void)
 
 	keccakhash(&hash[0], &buf[0]);
 	printpfx("keccak", hash);
+
+	jha_hash(&hash[0], &buf[0]);
+	printpfx("jha", hash);
 
 	lbry_hash(&hash[0], &buf[0]);
 	printpfx("lbry", hash);
@@ -2425,6 +2428,9 @@ void print_hash_tests(void)
 
 	timetravel_hash(&hash[0], &buf[0]);
 	printpfx("timetravel", hash);
+
+	bitcore_hash(&hash[0], &buf[0]);
+	printpfx("bitcore", hash);
 
 	veltor_hash(&hash[0], &buf[0]);
 	printpfx("veltor", hash);

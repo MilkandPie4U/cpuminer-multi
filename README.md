@@ -26,6 +26,7 @@ Algorithms
  * ✓ __sha256d__ (Bitcoin, Freicoin, Peercoin/PPCoin, Terracoin, ...)
  * ✓ __axiom__ (Axiom Shabal-256 based MemoHash)
  * ✓ __bastion__ (Joincoin [J])
+ * ✓ __bitcore__ Permuted serie of 10 algos (BitCore)
  * ✓ __blake__ (Saffron [SFR] Blake-256)
  * ✓ __blake2s__ (NevaCoin Blake2-S 256)
  * ✓ __bmw__ (Midnight [MDT] BMW-256)
@@ -35,6 +36,7 @@ Algorithms
  * ✓ __dmd-gr__ (Diamond-Groestl)
  * ✓ __fresh__ (FreshCoin)
  * ✓ __groestl__ (Groestlcoin)
+ * ✓ __jha__ (JackpotCoin, SweepStake)
  * ✓ __lbry__ (LBRY Credits [LBC])
  * ✓ __lyra2RE__ (Cryptocoin)
  * ✓ __lyra2REv2__ (VertCoin [VTC])
@@ -53,6 +55,7 @@ Algorithms
  * ✓ __timetravel__ Permuted serie of 8 algos (MachineCoin [MAC])
  * ✓ __vanilla__ (Blake-256 8-rounds - double sha256 [VNL])
  * ✓ __veltor__ (Veltor [VLT])
+ * ✓ __xevan__ x17 x 2 on bigger header (BitSend [BSD])
  * ✓ __x11evo__ (Revolver [XRE])
  * ✓ __x11__ (Darkcoin [DRK], Hirocoin, Limecoin, ...)
  * ✓ __x13__ (Sherlockcoin, [ACE], [B2B], [GRC], [XHC], ...)
@@ -67,7 +70,6 @@ Algorithms
  * ? keccak (Maxcoin  HelixCoin, CryptoMeth, Galleon, 365coin, Slothcoin, BitcointalkCoin)
  * ? luffa (Joincoin, Doomcoin)
  * ? shavite3 (INKcoin)
- * ? xevan (BitSend [BSD])
 
 #### Planned support for
  * *scrypt-jane* (YaCoin, CopperBars, Pennies, Tickets, etc..)
