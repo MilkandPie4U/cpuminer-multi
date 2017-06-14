@@ -2382,6 +2382,9 @@ void print_hash_tests(void)
 	nist5hash(&hash[0], &buf[0]);
 	printpfx("nist5", hash);
 
+	tribushash(&hash[0], &buf[0]);
+	printpfx("tribus", hash);
+
 	pentablakehash(&hash[0], &buf[0]);
 	printpfx("pentablake", hash);
 

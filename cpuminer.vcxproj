@@ -227,6 +227,7 @@
     <ClCompile Include="algo\myr-groestl.c" />
     <ClCompile Include="algo\neoscrypt.c" />
     <ClCompile Include="algo\nist5.c" />
+    <ClCompile Include="algo\tribus.c" />
     <ClCompile Include="algo\pentablake.c" />
     <ClCompile Include="algo\pluck.c" />
     <ClCompile Include="algo\quark.c" />

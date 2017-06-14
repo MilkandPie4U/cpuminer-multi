@@ -102,6 +102,7 @@ enum algos {
 	ALGO_LYRA2REV2,   /* Lyra2REv2 (Vertcoin) */
 	ALGO_MYR_GR,      /* Myriad Groestl */
 	ALGO_NIST5,       /* Nist5 */
+	ALGO_TRIBUS,      /* Tribus */
 	ALGO_PENTABLAKE,  /* Pentablake */
 	ALGO_PLUCK,       /* Pluck (Supcoin) */
 	ALGO_QUBIT,       /* Qubit */
@@ -156,6 +157,7 @@ static const char *algo_names[] = {
 	"lyra2rev2",
 	"myr-gr",
 	"nist5",
+	"tribus",
 	"pentablake",
 	"pluck",
 	"qubit",
@@ -309,6 +311,7 @@ Options:\n\
                           myr-gr       Myriad-Groestl\n\
                           neoscrypt    NeoScrypt(128, 2, 1)\n\
                           nist5        Nist5\n\
+                          tribus       Tribus\n\
                           pluck        Pluck:128 (Supcoin)\n\
                           pentablake   Pentablake\n\
                           quark        Quark\n\
@@ -2249,6 +2252,9 @@ static void *miner_thread(void *userdata)
 			break;
 		case ALGO_NIST5:
 			rc = scanhash_nist5(thr_id, &work, max_nonce, &hashes_done);
+			break;
+		case ALGO_TRIBUS:
+			rc = scanhash_tribus(thr_id, &work, max_nonce, &hashes_done);
 			break;
 		case ALGO_PENTABLAKE:
 			rc = scanhash_pentablake(thr_id, &work, max_nonce, &hashes_done);
